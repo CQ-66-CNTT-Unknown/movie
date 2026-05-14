@@ -7,3 +7,11 @@
  * @return The logged-in user
  */
 User login();
+
+/**
+ * @brief Authenticate a user with username and password
+ * @param username The username of the user
+ * @param password The password of the user
+ * @return User structure if login successful (user_id > 0), otherwise invalid user
+ */
+User login_user(const char *username, const char *password);
